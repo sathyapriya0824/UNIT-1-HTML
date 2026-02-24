@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tables Part 1 & 2 Combined</title>
+</head>
+<body>
+
+    <h1>Tables Demonstration - Part 1 & 2</h1>
+
+    <hr>
+
+    <!-- Part 1: Basic Table with Caption and Headers -->
+    <h2>Part 1: Basic Table</h2>
+
+    <table border="1">
+        <caption>Student Marks - Part 1</caption>
+        <thead>
+            <tr>
+                <th>Roll No</th>
+                <th>Name</th>
+                <th>Subject</th>
+                <th>Marks</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Ravi</td>
+                <td>OOPS</td>
+                <td>85</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Priya</td>
+                <td>Python</td>
+                <td>92</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Ajay</td>
+                <td>Web Technology</td>
+                <td>78</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <!-- Part 2: Advanced Table (Rowspan, Colspan, Accessibility) -->
+    <h2>Part 2: Advanced Table</h2>
+
+    <table border="1">
+        <caption>Student Marks - Part 2</caption>
+        <thead>
+            <tr>
+                <th scope="col">Roll No</th>
+                <th scope="col">Name</th>
+                <th scope="col">Subject</th>
+                <th scope="col">Marks</th>
+                <th scope="col">Grade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">1</td>
+                <td rowspan="2">Ravi</td>
+                <td>OOPS</td>
+                <td>85</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>90</td>
+                <td>A+</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Priya</td>
+                <td colspan="2">Web Technology</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Ajay</td>
+                <td>Probability & Statistics</td>
+                <td>78</td>
+                <td>B+</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <!-- Accessibility Notes -->
+    <h2>Accessibility Features</h2>
+    <ul>
+        <li>Use <code>&lt;thead&gt;</code> for table header</li>
+        <li>Use <code>&lt;th scope="col"&gt;</code> to define column header</li>
+        <li>Use <code>caption</code> to describe table content</li>
+        <li>Rowspan/Colspan should be clearly labelled for screen readers</li>
+    </ul>
+
+</body>
+</html>

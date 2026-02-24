@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSE Course Feedback Form</title>
+</head>
+<body>
+
+<h2>CSE Course Feedback Form</h2>
+
+<form action="#" method="post">
+
+    <!-- Student Details -->
+    <h3>Student Details</h3>
+
+    <label>Full Name:</label><br>
+    <input type="text" name="name" required><br><br>
+
+    <label>Select Subject:</label><br>
+    <select name="subject" required>
+        <option value="">-- Select Subject --</option>
+        <option>OOPS</option>
+        <option>Web Technology</option>
+        <option>Logical Reasoning</option>
+        <option>Probability & Statistics</option>
+        <option>BEE</option>
+        <option>Python</option>
+    </select>
+
+    <br><br>
+
+    <!-- Rating Section -->
+    <h3>Rate the Subject</h3>
+
+    <input type="radio" name="rating" value="Excellent" required> Excellent<br>
+    <input type="radio" name="rating" value="Good"> Good<br>
+    <input type="radio" name="rating" value="Average"> Average<br>
+
+    <br>
+
+    <!-- Skills Section -->
+    <h3>Skills Gained</h3>
+
+    <input type="checkbox" name="skills" value="Programming"> Programming Skills<br>
+    <input type="checkbox" name="skills" value="Problem Solving"> Problem Solving<br>
+    <input type="checkbox" name="skills" value="Analytical Thinking"> Analytical Thinking<br>
+    <br>
+
+    <!-- Feedback Section -->
+    <h3>Additional Feedback</h3>
+
+    <textarea name="feedback" rows="4" cols="40" placeholder="Write your feedback here..."></textarea>
+
+    <br><br>
+
+    <!-- Buttons -->
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+
+</form>
+
+</body>
+</html>
